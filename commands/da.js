@@ -3,17 +3,18 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
 
 var list = [
-  'Recebeu ',
-  'https://imgur.com/w06DjGv.gif',
-  'https://imgur.com/SZD4ZLG.gif',
-  'https://imgur.com/BNxLtAE.gif'
-   
+    'Recebeu 1 de Cura',
+    'Recebeu 3 de Cura',
+    'Recebeu 5 de Cura',
+    'Recebeu 2 de Dano',
+    'Recebeu 4 de Dano',
+    'Recebeu 6 de Dano'
 ];
 
 var rand = list[Math.floor(Math.random() * list.length)];
 let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 if (!user) {
-return message.reply('você mencionou errado um jogador.');
+return message.reply('você mencionou errado um User, tente do jeito certo animal.');
 }
 
 let avatar = message.author.displayAvatarURL({format: "png"});
