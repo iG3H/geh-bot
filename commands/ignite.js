@@ -13,20 +13,21 @@ var list = [
 var rand = list[Math.floor(Math.random() * list.length)];
 let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 if (!user) {
-return message.reply('lembre-se de mencionar um usuário válido para beijar!');
+return message.reply('você mencionou errado um User, tente do jeito certo animal.');
 }
 /*
-message.channel.send(`${message.author.username} **acaba de beijar** ${user.username}! :heart:`, {files: [rand]});
+message.channel.send(`${message.author.username} **incendiou** ${user.username}! :flame:`, {files: [rand]});
 */
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('Kiss')
-        .setColor('#000000')
-        .setDescription(`${message.author} acaba de beijar ${user}`)
+        .setTitle('QUEIME!')
+        .setColor('#CB4335')
+        .setDescription(`${message.author} incendiou ${user}`)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)
-        .setFooter('Kissu kissu kissu')
+        .setFooter('Queima Kengarau!iiiiiiiiiiiiih')
         .setAuthor(message.author.tag, avatar);
   await message.channel.send(embed);
+  
 }
