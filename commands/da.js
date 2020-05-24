@@ -3,30 +3,23 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
 
 var list = [
-    'Recebeu 1 de Cura',
-    'Recebeu 3 de Cura',
-    'Recebeu 5 de Cura',
-    'Recebeu 2 de Dano',
-    'Recebeu 4 de Dano',
-    'Recebeu 6 de Dano'
+    'Recebeu 1 de Cura :heart:',
+    'Recebeu 3 de Cura :sparkling_heart:',
+    'Recebeu 5 de Cura :heartpulse:',
+    'Recebeu 2 de Dano ',
+    'Recebeu 4 de Dano ',
+    'Recebeu 6 de Dano ' 
 ];
 
 var rand = list[Math.floor(Math.random() * list.length)];
 let user = message.mentions.users.first() || client.users.cache.get(args[0]);
-if (!user) {
-return message.reply('você mencionou errado um User, tente do jeito certo animal.');
-}
 
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('Primeira Habilidade: Infernum Sinitis')
-        .setColor('#CB4335')
-        .setDescription(`:flame: ${message.author} INCENDIOU ${user} :flame:`)
-        .setImage(rand)
-        .setTimestamp()
-        .setThumbnail(avatar)
-        .setFooter('Queime Herege!')
-        .setAuthor(message.author.tag, avatar);
-  await message.channel.send(embed);
+        .setTitle('O jogador selecionado:')
+        .setColor('#FFFFFF')
+        .setDescription(rand)
+
+await message.channel.send(embed);
   
 }
