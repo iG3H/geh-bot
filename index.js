@@ -35,9 +35,15 @@ client.on("message", async message => {
 
 client.on("ready", () => {
   let activities = [
-      `${client.guilds.cache.size} servidores irritantes!`,
-      `${client.channels.cache.size} canais inuteis!`,
-      `${client.users.cache.size} usuários idiotas!`
+                      `${client.guilds.cache.size} servidores!`,
+                      `${client.users.cache.size} usuários.`,
+    `Como ficar calmo.`,
+    `Como ser gentil.`,
+    `YOGA`,
+    `Lady Gaga`,
+    `Pornô`,
+    `Java Script`
+      
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
