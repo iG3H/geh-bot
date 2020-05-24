@@ -6,9 +6,9 @@ exports.run = async (client, message, args) => {
       "Tá querendo apagar o que? Você não tem permissão de Gerenciar Mensagens, FDP!"
     );
   const deleteCount = parseInt(args[0], 10);
-  if (!deleteCount || deleteCount < 1 || deleteCount > 1000)
+  if (!deleteCount || deleteCount < 1 || deleteCount > 99)
     return message.reply(
-      "forneça um número de até 1000 mensagens a serem excluídas"
+      "seu imbecil! Você tem que escrever um número de 1 à 99 para que eu possa apagar as mensagens."
     );
 
   const fetched = await message.channel.messages.fetch({
