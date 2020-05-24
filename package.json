@@ -1,7 +1,7 @@
 {
-  "name": "Nome-do-Seu-Bot-Aqui",
+  "name": "GêH",
   "version": "0.0.1",
-  "description": "Descreva seu bot aqui",
+  "description": "Primeiro BoT",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
