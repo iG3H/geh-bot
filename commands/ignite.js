@@ -23,7 +23,7 @@ let avatar = message.author.displayAvatarURL({format: "png"});
         .setDescription(`:flame: ${message.author} INCENDIOU ${user} :flame:`)
         .setImage(rand)
         .setTimestamp()
-        
+        .setThumbnail(avatar)
         .setFooter('Queime Herege!')
         .setAuthor(message.author.tag, avatar);
   await message.channel.send(embed);
