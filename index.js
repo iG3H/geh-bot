@@ -42,7 +42,7 @@ client.on("ready", () => {
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
-        type: "Working at"
+        type: "PLAYING"
       }), 5000);  // WATCHING, LISTENING, PLAYING, STREAMING
 
   client.user
