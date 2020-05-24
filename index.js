@@ -35,20 +35,18 @@ client.on("message", async message => {
 
 client.on("ready", () => {
   let activities = [
-                      `${client.guilds.cache.size} servidores!`,
-                      `${client.users.cache.size} usuários.`,
-    `Como ficar calmo.`,
-    `Como ser gentil.`,
-    `YOGA`,
-    `Lady Gaga`,
-    `Pornô`,
-    `Java Script`
+                      `${client.guilds.cache.size} SERV'S`,
+                      `${client.users.cache.size} USER'S`,
+    `YOGA!`,
+    `LADY GAGA!`,
+    `PORN!`,
+    `JAVA!`
       
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
         type: "WATCHING"
-      }), 5000);  // WATCHING, LISTENING, PLAYING, STREAMING
+      }), 7000);  // WATCHING, LISTENING, PLAYING, STREAMING
 
   client.user
       .setStatus("dnd") // idle, dnd, online, invisible
