@@ -49,7 +49,7 @@ client.on("ready", () => {
       }), 7000);  // WATCHING, LISTENING, PLAYING, STREAMING
 
   client.user
-      .setStatus("dnd") // idle, dnd, online, invisible
+      .setStatus("idle") // idle, dnd, online, invisible
       .catch(console.error);
 console.log("Estou Online!")
 });
