@@ -17,14 +17,9 @@ let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
         .setTitle('Uma reflexão para você...')
-        .setColor('#34495E')
+        .setColor('#545D5C')
         .setDescription(rand)
-        .setImage()
-        .setTimestamp()
-        .setThumbnail()
-        .setFooter('Vida que segue...')
-        
-  await message.channel.send(embed);
 
+await message.channel.send(embed);
 
 } 
