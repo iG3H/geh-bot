@@ -35,20 +35,19 @@ client.on("message", async message => {
 
 client.on("ready", () => {
   let activities = [
-      `${client.guilds.cache.size} servidores!`,
-      `${client.channels.cache.size} canais!`,
-      `${client.users.cache.size} usuários!`
-      
+      `${client.guilds.cache.size} servidores irritantes!`,
+      `${client.channels.cache.size} canais inuteis!`,
+      `${client.users.cache.size} usuários idiotas!`
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
-        type: "PLAYING"
+        type: "WATCHING"
       }), 5000);  // WATCHING, LISTENING, PLAYING, STREAMING
 
   client.user
       .setStatus("dnd") // idle, dnd, online, invisible
       .catch(console.error);
-console.log("Eaê viados, tô vivo porra!")
+console.log("Estou Online!")
 });
 
 client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token
