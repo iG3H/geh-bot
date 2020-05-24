@@ -3,15 +3,11 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
 
 var list = [
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  ''
-  
+  'https://imgur.com/g54UpQP.gif',
+  'https://imgur.com/w06DjGv.gif',
+  'https://imgur.com/SZD4ZLG.gif',
+  'https://imgur.com/BNxLtAE.gif'
+   
 ];
 
 var rand = list[Math.floor(Math.random() * list.length)];
