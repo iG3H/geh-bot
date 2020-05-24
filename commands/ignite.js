@@ -20,13 +20,13 @@ message.channel.send(`${message.author.username} **incendiou** ${user.username}!
 */
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('QUEIME!')
+        .setTitle('Primeira Habilidade: Infernum Introeuntes Sinitis Intrare')
         .setColor('#CB4335')
-        .setDescription(`${message.author} incendiou ${user}`)
+        .setDescription(`:flame: ${message.author} INCENDIOU ${user} :flame:`)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)
-        .setFooter('Queima Kengarau!iiiiiiiiiiiiih')
+        .setFooter('Queime Herege!')
         .setAuthor(message.author.tag, avatar);
   await message.channel.send(embed);
   
