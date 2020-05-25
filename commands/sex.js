@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
+  
+  if (!message.member.permissions.has("MANAGE_MESSAGES"))
+    return message.reply(
+      "Nada de porno pra você criança! Você não tem permissão de Gerenciar Mensagens, FDP!"
+    );
 
 var list = [
   'https://imgur.com/CZrk8XH.gif',
@@ -22,14 +27,14 @@ return message.reply('você mencionou errado um User, tente do jeito certo anima
 
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('Oi! Vem cá... Posso brincar com você?')
-        .setColor('#e60082')
-        .setDescription(`:underage: ${message.author} está se alimentando de ${user} :underage:`)
+        .setTitle('')
+        .setColor('#f54254')
+        .setDescription(`:underage: ${message.author} quer fazer isto com ${user}`)
         .setImage(rand)
         .setTimestamp()
-        .setThumbnail(avatar)
+        .setThumbnail('')
         .setFooter('Use com moderação!!')
-        .setAuthor(message.author.tag, avatar);
+        .setAuthor('');
   await message.channel.send(embed);
   
 }
