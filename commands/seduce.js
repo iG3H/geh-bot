@@ -9,6 +9,7 @@ var list = [
   'https://imgur.com/PJIHb4Z.gif',
   'https://imgur.com/dWlSqpi.gif'
   
+
 ];
 
 var rand = list[Math.floor(Math.random() * list.length)];

@@ -4,10 +4,10 @@ exports.run = async (client, message, args) => {
 
 var list = [
   'https://imgur.com/uHFAsns.gif',
-  '.gif',
-  '.gif',
-  '.gif',
-  '.gif'
+  'https://imgur.com/kXQG7rg.gif',
+  'https://imgur.com/bVI3Dah.gif',
+  'https://imgur.com/Ny0LdUk.gif',
+  'https://imgur.com/AQBFpiu.gif'
   
 ];
 
@@ -19,9 +19,9 @@ return message.reply('você mencionou errado um User, tente do jeito certo anima
 
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('É uma Crise de Carência')
+        .setTitle('Que Crise de Carência viu...')
         .setColor('#f291ca')
-        .setDescription(`:heartpulse: ${message.author} está tentando seduzir ${user} :heartpulse:`)
+        .setDescription(`:heartpulse: ${message.author} precisa do carinho de ${user} :heartpulse:`)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)
