@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
   
   if (!message.member.permissions.has("MANAGE_MESSAGES"))
     return message.reply(
-      "Nada de porno pra você criança! Você não tem permissão de Gerenciar Mensagens, FDP!"
+      "Nada de pornô pra tu criança! Você não tem permissão do ADM para isso, FDP!"
     );
 
 var list = [
