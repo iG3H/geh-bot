@@ -12,6 +12,8 @@ var list = [
 
 ];
 
+  message.delete().catch(O_o => {});
+
 var rand = list[Math.floor(Math.random() * list.length)];
 let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 if (!user) {

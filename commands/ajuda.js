@@ -21,6 +21,8 @@ const com = (`
 
   `)
    
+  message.delete().catch(O_o => {});
+
 const embed = new Discord.MessageEmbed()
         
         .setTitle('Estes são os comandos disponiveis atualmente:')
