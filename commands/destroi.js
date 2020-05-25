@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
   
   message.channel.bulkDelete(fetched);
   message.channel
-    .send(`Limpei ${args[0]} menssagens nesse caralho!`)
+    .send(`Destruí algumas de suas Evidências! :smoking:`)
     .catch(error =>
       console.log(`Não consegui deletar as merdas das mensagens por causa de: ${error}`)
     );
