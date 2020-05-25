@@ -15,7 +15,7 @@ const com = (`
               g.freez <@user> : Congela o usuário mencionado.   
               g.maldite <@user> : Amaldiçoa o usuário mencionado.
 
-              COMANDO ADMINISTRATIVOS" *Apenas com Permissão*
+              COMANDO ADMINISTRATIVOS" *apenas com Permissão*
               g.delete <número entre 1 a 100> : Apaga a quantidade informada de menssagem no canal.
               g.destroi : Apaga uma quantidade variavél de menssagens no canal.
 
@@ -26,10 +26,9 @@ const embed = new Discord.MessageEmbed()
         .setTitle('Estes são os comandos disponiveis atualmente:')
         .setColor('#f7f7f5')
         .setDescription(com)
-        .setTimestamp()
+        .setTimestamp('')
         .setFooter('Esperamos aumentar a lista em breve! Obrigado pelo uso.')
         
 await message.channel.send(embed);
-  
   
 }

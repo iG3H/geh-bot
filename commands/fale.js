@@ -4,19 +4,7 @@ module.exports.run = async (client, message, args) => {
   
   const sayMessage = args.join(" ");
   
-  
-  const embed = new Discord.MessageEmbed()
-  
-        .setTitle('')
-        .setColor('#000000')
-        .setDescription(sayMessage)
-        .setTimestamp()
-        .setFooter('')
-  
-  
-  
-  
-  message.channel.send(sayMessage);
-  
-    
+        message.delete().catch(O_o => {});
+  await message.channel.send(sayMessage);
+
 };
