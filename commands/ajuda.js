@@ -23,12 +23,14 @@ const com = (`
    
   message.delete().catch(O_o => {});
 
+let avatar = message.author.displayAvatarURL({format: "png"});
 const embed = new Discord.MessageEmbed()
         
         .setTitle('Estes são os comandos disponiveis atualmente:')
         .setColor('#f7f7f5')
         .setDescription(com)
         .setTimestamp('')
+        .setThumbnail(avatar)
         .setFooter('Esperamos aumentar a lista em breve! Obrigado pelo uso.')
         
 await message.channel.send(embed);
