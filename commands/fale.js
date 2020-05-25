@@ -2,13 +2,21 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
   
-  const embed = new Discord.MessageEmbed();
   const sayMessage = args.join(" ");
   
-  message.delete().catch(O_o => {});
+  
+  const embed = new Discord.MessageEmbed()
+  
+        .setTitle('')
+        .setColor('#000000')
+        .setDescription(sayMessage)
+        .setTimestamp()
+        .setFooter('')
+  
+  
+  
   
   message.channel.send(sayMessage);
   
-  
-  
+    
 };
