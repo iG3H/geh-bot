@@ -3,10 +3,12 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
 
 var list = [
-  'https://imgur.com/y4hfWyo.gif',
-  'https://imgur.com/EJUFBFv.gif',
-  'https://imgur.com/vOr86i0.gif'
-   
+  'https://imgur.com/CZrk8XH.gif',
+  'https://imgur.com/0Vc9I2R.gif',
+  'https://imgur.com/xch6xZE.gif',
+  'https://imgur.com/PJIHb4Z.gif',
+  'https://imgur.com/dWlSqpi.gif'
+  
 ];
 
 var rand = list[Math.floor(Math.random() * list.length)];
@@ -17,7 +19,7 @@ return message.reply('você mencionou errado um User, tente do jeito certo anima
 
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('')
+        .setTitle('Oi! Vem cá... Posso brincar com você?')
         .setColor('#e60082')
         .setDescription(`:heartpulse: ${message.author} está tentando seduzir ${user} :heartpulse:`)
         .setImage(rand)
