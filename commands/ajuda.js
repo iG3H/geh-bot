@@ -3,9 +3,21 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
 
 const com = (`
-              g.ajuda : exibe a lista de comandos dis poniveis.
+              COMANDO GERAIS"
+              g.fale : O bot repete a menssagem escrita depois do comando.
+              g.ajuda : Exibe a lista de comandos dis poniveis.
               
-`)                     
+              COMANDOS DE AÇÕES"
+              g.care <@user> : Pede carinho pra o usuário mencionado.
+              g.seduce <@user> : Tenta seduzir o usuário mencionado. 
+              g.ignite <@user> : Queima o usuário mencionado.
+              g.freez <@user> : Congela o usuário mencionado.   
+              g.maldite <@user> : Amaldiçoa o usuário mencionado.
+
+              COMANDO ADMINISTRATIVOS"
+              g.delete <número entre 1 a 100> : Apaga a quantidade informada de menssagem no canal.
+              g.destroi : Apaga uma quantidade variavél de menssagens no canal.
+  `)
    
 const embed = new Discord.MessageEmbed()
         
