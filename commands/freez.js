@@ -3,8 +3,9 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
 
 var list = [
-  '',
-  ''
+  'https://imgur.com/gBrqVfq.gif',
+  'https://imgur.com/csysti6.gif',
+  'https://imgur.com/u985dJ8.gif'
    
 ];
 
