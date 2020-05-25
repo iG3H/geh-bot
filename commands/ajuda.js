@@ -1,13 +1,18 @@
 const Discord = require('discord.js');
+const Commands = require('commands/');
 
 exports.run = async (client, message, args) => {
     
-const descriptions = {
+const descriptions = {};   
   
-  
-  
-};   
-  
+  var text = "Bot Feito por GêH \n";
+  Object.keys(Commands).ForEach(command =>{
+   texto += ``\n  
+    
+    
+    
+  }
+  )
   
 const embed = new Discord.MessageEmbed()
         
