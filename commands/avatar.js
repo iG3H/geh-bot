@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
 
   var sex = [
     
-    'Homem :red_circle:',
+    'Homem - :red_circle:',
     'Mulher :blue_circle:',
     'Indefinido :white_circle:',
     'Desconhecido :black_circle:'
@@ -65,12 +65,12 @@ exports.run = async (client, message, args) => {
   
   var niv = [
     
-    'Iniciante',
-    'Mediano',
-    'Experiente',
-    'Mestre',
-    'Lenda',
-    'Desconhecido'
+    'Iniciante :beginner: ',
+    'Mediano :diamond_shape_with_a_dot_inside:',
+    'Experiente :trident:',
+    'Mestre :fleur_de_lis:',
+    'Lenda :crown:',
+    'Desconhecido :chess_pawn: '
 
     
   ];
@@ -88,20 +88,20 @@ exports.run = async (client, message, args) => {
   
   var des = [
 
-    'Escuro',
-    'Luminosidade',
-    'Sangramento',
-    'Pouca Resistência'
+    'Escuridão :new_moon:',
+    'Luminosidade :bulb:',
+    'Sangramento :drop_of_blood:',
+    'Pouca Resistência :warning:'
     
   ];
   let desrand = des[Math.floor(Math.random() * des.length)];
   
   var van = [
     
-    'Força Superior',
-    'Genialidade',
-    'Manamante',
-    'Velocidade'
+    'Força Superior :muscle:',
+    'Genialidade :jigsaw:',
+    'Manamante :cyclone:',
+    'Velocidade :recycle:'
     
   ];
   let vanrand = van[Math.floor(Math.random() * van.length)];
