@@ -5,9 +5,9 @@ exports.run = async (client, message, args) => {
   var sex = [
     
     'Homem - :red_circle:',
-    'Mulher :blue_circle:',
-    'Indefinido :white_circle:',
-    'Desconhecido :black_circle:'
+    'Mulher - :blue_circle:',
+    'Indefinido - :white_circle:',
+    'Desconhecido - :black_circle:'
   ];
   let sexrand = sex[Math.floor(Math.random() * sex.length)];
   
@@ -32,23 +32,23 @@ exports.run = async (client, message, args) => {
   
   var race = [
     
-    'Bestial',
-    'Humano',
-    'Elfo',
-    'Orc',
-    'Anão',
-    'Retornado'
+    'Bestial - :smirk_cat:',
+    'Humano - :person_standing:',
+    'Elfo - :elf:',
+    'Orc - :imp:',
+    'Anão - :mage:',
+    'Retornado - :zombie:'
     
   ];
   let racerand = race[Math.floor(Math.random() * race.length)];
   
   var dec = [
     
-    'Dragão',
-    'Fáerico',
-    'Gigante',
-    'Oceanico',
-    'Alado'
+    'Dragão - :dragon:',
+    'Fáerico - :butterfly:',
+    'Gigante - :straight_ruler:',
+    'Oceanico - :ocean:',
+    'Alado - :bat:'
     
   ];
   let decrand = dec[Math.floor(Math.random() * dec.length)];
