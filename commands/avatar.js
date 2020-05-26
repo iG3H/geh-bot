@@ -4,8 +4,8 @@ exports.run = async (client, message, args) => {
 
   var sex = [
     
-    'Homem',
-    'Mulher',
+    'Homem :red_circle:',
+    'Mulher :blue_circle:',
     'Indefinido',
     'Desconhecido'
   ];
@@ -80,8 +80,8 @@ exports.run = async (client, message, args) => {
     
     'Terra :mountain:',
     'Fogo :flame:',
-    'Água ::',
-    'Ar'
+    'Água :droplet:',
+    'Ar :dash:'
     
   ];
   let elerand = ele[Math.floor(Math.random() * ele.length)];
@@ -109,16 +109,15 @@ exports.run = async (client, message, args) => {
 const avatarlist = [` 
 
 ${message.author}, seu avatar está pronto:
-  
-. Sexo: ${sexrand}
-. Idade: ${agerand}
-. Raça: ${racerand}
-. Decendência: ${decrand}
-. Função: ${funrand}
-. Nível: ${nivrand}
-. Elemento: ${elerand}
-. Fraqueza: ${desrand}
-. Vantagem: ${vanrand}
+:white_small_square: Sexo: ${sexrand}
+:white_small_square: Idade: ${agerand}
+:white_small_square: Raça: ${racerand}
+:white_small_square: Decendência: ${decrand}
+:white_small_square: Função: ${funrand}
+:white_small_square: Nível: ${nivrand}
+:white_small_square: Elemento: ${elerand}
+:white_small_square: Fraqueza: ${desrand}
+:white_small_square: Vantagem: ${vanrand}
   
 `];
      
