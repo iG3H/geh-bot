@@ -53,7 +53,59 @@ exports.run = async (client, message, args) => {
   ];
   let decrand = dec[Math.floor(Math.random() * dec.length)];
   
+  var fun = [
     
+    'Guerreiro',
+    'Mago',
+    'Protetor',
+    'Caçador'
+    
+  ];
+  let funrand = fun[Math.floor(Math.random() * fun.length)];
+  
+  var niv = [
+    
+    'Iniciante',
+    'Mediano',
+    'Experiente',
+    'Mestre',
+    'Lenda',
+    'Desconhecido'
+
+    
+  ];
+  let nivrand = niv[Math.floor(Math.random() * niv.length)];
+  
+  var ele = [
+    
+    'Terra',
+    'Fogo',
+    'Água',
+    'Ar'
+    
+  ];
+  let elerand = ele[Math.floor(Math.random() * ele.length)];
+  
+  var des = [
+
+    'Escuro',
+    'Luminosidade',
+    'Sangramento',
+    'Pouca Resistência'
+    
+  ];
+  let desrand = des[Math.floor(Math.random() * des.length)];
+  
+  var van = [
+    
+    'Força Superior',
+    'Genialidade',
+    'Manamante',
+    'Velocidade'
+    
+  ];
+  let vanrand = van[Math.floor(Math.random() * van.length)];
+      
 const avatarlist = [` 
 
 ${message.author}, seu avatar está pronto:
@@ -62,11 +114,11 @@ ${message.author}, seu avatar está pronto:
 . Idade: ${agerand}
 . Raça: ${racerand}
 . Decendência: ${decrand}
-. Função:
-. Nível:
-. Elemento: 
-. Fraqueza:
-. Vantagem:
+. Função: ${funrand}
+. Nível: ${nivrand}
+. Elemento: ${elerand}
+. Fraqueza: ${desrand}
+. Vantagem: ${vanrand}
   
 `];
     
