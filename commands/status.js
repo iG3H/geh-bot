@@ -4,10 +4,10 @@ exports.run = async (client, message, args) => {
 
     const status = {
       
-      online: `:white_small_square: - Online`,
-      idle: `:small_orange_diamond: - Ausente`,
-      dnd: `:small_red_triangle_down: - Não pertubar`,
-      offline: `:black_small_square: - Offline`  
+      online: `Online (:white_small_square:)`,
+      idle: `Ausente (:small_orange_diamond:)`,
+      dnd: `Ocupado (:small_red_triangle_down:)`,
+      offline: `Offline (:black_small_square:)`  
       
                     };
 
@@ -17,7 +17,7 @@ let avatar = message.author.displayAvatarURL({format: "png"});
   
 const placa = [`
 
-${status[member.user.presence.status]}
+É claro que você está ${status[member.user.presence.status]}, seu idiota!
 
 `]
         
