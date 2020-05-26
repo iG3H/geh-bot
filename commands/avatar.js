@@ -6,8 +6,8 @@ exports.run = async (client, message, args) => {
     
     'Homem :red_circle:',
     'Mulher :blue_circle:',
-    'Indefinido',
-    'Desconhecido'
+    'Indefinido :white_circle:',
+    'Desconhecido :black_circle:'
   ];
   let sexrand = sex[Math.floor(Math.random() * sex.length)];
   
@@ -55,10 +55,10 @@ exports.run = async (client, message, args) => {
   
   var fun = [
     
-    'Guerreiro',
-    'Mago',
-    'Protetor',
-    'Caçador'
+    'Guerreiro :crossed_swords:',
+    'Mago :crystal_ball:',
+    'Protetor :shield:',
+    'Caçador :archery:'
     
   ];
   let funrand = fun[Math.floor(Math.random() * fun.length)];
