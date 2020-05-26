@@ -1,49 +1,35 @@
-/**
- * O Comando Help envia uma mensagem de ajuda.
- * Contendo as informações dos comandos.
- */
+const Discord = require('discord.js');
 
-module.exports = {
+exports.run = async (client, message, args) => {
 
-  run: (client, message, args) => {
-    /** Objeto embed que irá ser enviado. */
-    const embed = {
-      color: 0xB1103C,
-      title: 'Minha lista de comandos',
-      description: '[Clique aqui para ir até o repositório onde estou =)](https://github.com/Liga-dos-Programadores/Project-A)',
-      timestamp: new Date(),
-      footer: {
-        text: '2020 ®Liga dos Programadores'
-      },
-      fields: []
+const content = [`
+              
+              COMANDO GERAIS"
+              g.fale : O bot repete a menssagem escrita depois do comando.
+              g.ajuda : Exibe a lista de comandos disponiveis.
+              g.status : Informa seus status no Discord.
+              
+              COMANDOS DE AÇÕES"
+              g.care <@user> : Pede carinho pra o usuário mencionado.
+              g.seduce <@user> : Tenta seduzir o usuário mencionado. 
+              g.ignite <@user> : Queima o usuário mencionado.
+              g.freez <@user> : Congela o usuário mencionado.   
+              g.maldite <@user> : Amaldiçoa o usuário mencionado.
+
+              COMANDO ADMINISTRATIVOS" *apenas com Permissão*
+              g.delete <número entre 1 a 100> : Apaga a quantidade informada de menssagem no canal.
+              g.destroi : Apaga uma quantidade variavél de menssagens no canal.
+
+  `] };
+   
+const embed = {
+                  color: 'RANDON',
+                  title: 'Minha lista de comandos',
+                  description: (content),
+                  timestamp: new Date(),
+                  footer: {},
+                  text: '2020 ®Liga dos Programadores'
+      
     }
 
-    let commands = client.commands
-
-    if (message.member === null || !message.member.hasPermission('ADMINISTRATOR')) commands = commands.filter(c => !c.help.admin)
-
-    commands.forEach(command => {
-      if (command.alias) return
-      embed.fields.push({
-        name: `**!${command.help.name}**`,
-        value: `*Descrição*: ${command.help.description}
-        *Categoria*: ${command.help.category}\n`
-      })
-    })
-
-    message.author.send({
-      embed: embed
-    })
-      .then(() => message.react('⚡'))
-      .catch(() => message.reply('eu não tenho permissões para enviar DM para você 😥'))
-  },
-
-  conf: {},
-
-  help: {
-    name: 'help',
-    category: 'Ajuda',
-    description: 'Mostra todos os comandos disponíveis do bot.',
-    usage: 'help'
-  }
-}
+   
