@@ -14,7 +14,6 @@ var list = [
   'https://imgur.com/PJIHb4Z.gif',
   'https://imgur.com/dWlSqpi.gif'
   
-
 ];
 
   message.delete().catch(O_o => {});
