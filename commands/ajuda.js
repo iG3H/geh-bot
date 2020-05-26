@@ -27,7 +27,7 @@ let avatar = message.author.displayAvatarURL({format: "png"});
 const embed = new Discord.MessageEmbed()
         
         .setTitle('Estes são os comandos disponiveis atualmente:')
-        .setColor('#f7f7f5')
+        .setColor('RANDOM')
         .setDescription(content)
         .setThumbnail(avatar)
         .setFooter('Esperamos aumentar a lista em breve! Obrigado pelo uso.')
