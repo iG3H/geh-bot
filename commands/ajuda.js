@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
-const com = (`
+const content = [`
               
               COMANDO GERAIS"
               g.fale : O bot repete a menssagem escrita depois do comando.
@@ -19,7 +19,7 @@ const com = (`
               g.delete <número entre 1 a 100> : Apaga a quantidade informada de menssagem no canal.
               g.destroi : Apaga uma quantidade variavél de menssagens no canal.
 
-  `)
+  `]
    
   message.delete().catch(O_o => {});
 
@@ -28,8 +28,7 @@ const embed = new Discord.MessageEmbed()
         
         .setTitle('Estes são os comandos disponiveis atualmente:')
         .setColor('#f7f7f5')
-        .setDescription(com)
-        .setTimestamp('')
+        .setDescription(content)
         .setThumbnail(avatar)
         .setFooter('Esperamos aumentar a lista em breve! Obrigado pelo uso.')
         
