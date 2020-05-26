@@ -121,7 +121,7 @@ ${message.author}, seu avatar está pronto:
 . Vantagem: ${vanrand}
   
 `];
-    
+     
 await message.channel.send(avatarlist);
   
 }
