@@ -78,9 +78,9 @@ exports.run = async (client, message, args) => {
   
   var ele = [
     
-    'Terra',
-    'Fogo',
-    'Água',
+    'Terra :mountain:',
+    'Fogo :flame:',
+    'Água ::',
     'Ar'
     
   ];
