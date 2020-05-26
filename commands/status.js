@@ -2,13 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
   
-    const inline = true
-    const status = {
-      online: ' `🟢` Online',
-      idle: ' `🟠` Ausente',
-      dnd: ' `🔴` Não pertubar',
-      offline: ' `⚫️` Offline'
-    };
+    
   
     const member = message.mentions.members.first() || message.guild.members.get(args[0]) || message.member
     const target = message.mentions.users.first() || message.author
@@ -20,8 +14,8 @@ exports.run = async (client, message, args) => {
       .setThumbnail((target.displayAvatarURL))
       .setColor('RANDOM')
       .setAuthor('🔍 Informações do usuário')
-      .addField('**Tag**', `${member.user.tag}`, inline)
-      .addField('**ID**', member.user.id, inline)
+      
+      
       .addField('**Nickname**', `${member.nickname !== null ? `Nickname: ${member.nickname}` : 'Nenhum'}`, true)
       .addField('**Bot**', `${bot}`, inline, true)
       .addField('**Status**', `${status[member.user.presence.status]}`, inline, true)
@@ -31,5 +25,5 @@ exports.run = async (client, message, args) => {
       .setTimestamp()
 
   await message.channel.send(embed)
-  
+    
 }
