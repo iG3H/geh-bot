@@ -30,14 +30,38 @@ exports.run = async (client, message, args) => {
   ];
   let agerand = age[Math.floor(Math.random() * age.length)];
   
+  var race = [
+    
+    'Bestial',
+    'Humano',
+    'Elfo',
+    'Orc',
+    'Anão',
+    'Retornado'
+    
+  ];
+  let racerand = race[Math.floor(Math.random() * race.length)];
   
+  var dec = [
+    
+    'Dragão',
+    'Fáerico',
+    'Gigante',
+    'Oceanico',
+    'Alado'
+    
+  ];
+  let decrand = dec[Math.floor(Math.random() * dec.length)];
+  
+    
 const avatarlist = [` 
 
 ${message.author}, seu avatar está pronto:
   
 . Sexo: ${sexrand}
 . Idade: ${agerand}
-. Raça:
+. Raça: ${racerand}
+. Decendência: ${decrand}
 . Função:
 . Nível:
 . Elemento: 
