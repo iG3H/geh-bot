@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
-    const status = {
+  const status = {
       
       online: `Online`,
       idle: `Ausente`,
@@ -22,7 +22,6 @@ exports.run = async (client, message, args) => {
 
 const member = message.mentions.users.first() || client.users.cache.get(args[0]) || message.member;
 
-let avatar = message.author.displayAvatarURL({format: "png"});
   
 message.delete().catch(O_o => {});
 
@@ -31,7 +30,15 @@ const placa = [`
 ${symb[member.user.presence.status]} É claro que você está ${status[member.user.presence.status]}, seu idiota!
 
 `]
-        
-await message.channel.send(placa);
+          
+  const avatar = message.author.displayAvatarURL({format: "png"});
+  
+  const embed = new Discord.MessageEmbed()
+  
+        .setTitle('')
+        .setColor('RANDOM')
+        .setDescription(placa)
+  
+  await message.channel.send(embed);
   
 }
