@@ -2,27 +2,24 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
-const content = [''
-              
-                TESTANDO A PORRA DO COMANDO EM JAVA!
-                
-                
-  '']
+const content = [`
+
+
+const target = message.mentions.users.first() || message.author
+let user = message.mentions.users.first() || client.users.cache.get(args[0]);
+
+
+`];
 
 const member = message.mentions.users.first() || client.users.cache.get(args[0]) || message.member;
 
 let avatar = message.author.displayAvatarURL({format: "png"});
   
-const embed = new Discord.MessageEmbed()
+const placa = new Discord.MessageEmbed()
         
-        .setAuthor(`🔍 Informações do usuário - ${message.author.tag}`)
-        
-        .setTitle('Estes são os comandos disponiveis atualmente:')
         .setColor('RANDOM')
-        .setDescription(content)
         .setThumbnail(avatar)
-        .setFooter('Esperamos aumentar a lista em breve! Obrigado pelo uso.')
         
-await message.channel.send(embed);
+await message.channel.send(placa);
   
 }
