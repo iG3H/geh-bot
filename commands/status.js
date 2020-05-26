@@ -1,29 +1,32 @@
 const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
-  
-    
-  
-    const member = message.mentions.members.first() || message.guild.members.get(args[0]) || message.member
-    const target = message.mentions.users.first() || message.author
-    const bot = member.user.bot ? '`🤖` Sim' : ' `🙂` Não'
-  
-    
-    const embed = new Discord.RichEmbed()
 
-      .setThumbnail((target.displayAvatarURL))
-      .setColor('RANDOM')
-      .setAuthor('🔍 Informações do usuário')
-      
-      
-      .addField('**Nickname**', `${member.nickname !== null ? `Nickname: ${member.nickname}` : 'Nenhum'}`, true)
-      .addField('**Bot**', `${bot}`, inline, true)
-      .addField('**Status**', `${status[member.user.presence.status]}`, inline, true)
-      .addField('**Jogando**', `${member.user.presence.game ? `${member.user.presence.game.name}` : ' Nada'}`, inline, true)
-      .addField('**Cargos**', `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(' **|** ') || 'Nenhum cargo'}`, true)
-      
-      .setTimestamp()
+const content = [`
+              
+                TESTANDO A PORRA DO COMANDO EM JAVA!
+.setAuthor('🔍 Informações do usuário')
 
-  await message.channel.send(embed)
-    
+
+  `]
+
+
+   
+  message.delete().catch(O_o => {});
+
+let avatar = message.author.displayAvatarURL({format: "png"});
+const embed = new Discord.MessageEmbed()
+        
+        
+        .setTitle('Estes são os comandos disponiveis atualmente:')
+        .setColor('RANDOM')
+        .setDescription(content)
+        .setThumbnail(avatar)
+
+        .addField('**Nickname**', `${member.nickname !== null ? `Nickname: ${member.nickname}` : 'Nenhum'}`, true)
+     
+        .setFooter('Esperamos aumentar a lista em breve! Obrigado pelo uso.')
+        
+await message.channel.send(embed);
+  
 }
