@@ -6,7 +6,8 @@ const content = [`
               
               COMANDO GERAIS"
               g.fale : O bot repete a menssagem escrita depois do comando.
-              g.ajuda : Exibe a lista de comandos dis poniveis.
+              g.ajuda : Exibe a lista de comandos disponiveis.
+              g.status : Informa seus status no Discord.
               
               COMANDOS DE AÇÕES"
               g.care <@user> : Pede carinho pra o usuário mencionado.
