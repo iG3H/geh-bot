@@ -32,8 +32,8 @@ exports.run = async (client, message, args) => {
   
   var race = [
     
-    'Bestial - :smirk_cat:',
-    'Humano - :person_standing:',
+    'Bestial - :wolf:',
+    'Humano - :smiley:',
     'Elfo - :elf:',
     'Orc - :imp:',
     'Anão - :mage:',
@@ -55,53 +55,52 @@ exports.run = async (client, message, args) => {
   
   var fun = [
     
-    'Guerreiro :crossed_swords:',
-    'Mago :crystal_ball:',
-    'Protetor :shield:',
-    'Caçador :archery:'
+    'Guerreiro - :crossed_swords:',
+    'Mago - :crystal_ball:',
+    'Protetor - :shield:',
+    'Caçador - :archery:'
     
   ];
   let funrand = fun[Math.floor(Math.random() * fun.length)];
   
   var niv = [
     
-    'Iniciante :beginner: ',
-    'Mediano :diamond_shape_with_a_dot_inside:',
-    'Experiente :trident:',
-    'Mestre :fleur_de_lis:',
-    'Lenda :crown:',
-    'Desconhecido :chess_pawn: '
+    'Iniciante - :beginner: ',
+    'Mediano - :diamond_shape_with_a_dot_inside:',
+    'Experiente - :trident:',
+    'Mestre - :fleur_de_lis:',
+    'Lenda - :crown:',
+    'Desconhecido - :chess_pawn: '
 
-    
   ];
   let nivrand = niv[Math.floor(Math.random() * niv.length)];
   
   var ele = [
     
-    'Terra :mountain:',
-    'Fogo :flame:',
-    'Água :droplet:',
-    'Ar :dash:'
+    'Terra - :mountain:',
+    'Fogo - :flame:',
+    'Água - :droplet:',
+    'Ar - :dash:'
     
   ];
   let elerand = ele[Math.floor(Math.random() * ele.length)];
   
   var des = [
 
-    'Escuridão :new_moon:',
-    'Luminosidade :bulb:',
-    'Sangramento :drop_of_blood:',
-    'Pouca Resistência :warning:'
+    'Escuridão - :new_moon:',
+    'Luminosidade - :bulb:',
+    'Sangramento - :drop_of_blood:',
+    'Pouca Resistência - :warning:'
     
   ];
   let desrand = des[Math.floor(Math.random() * des.length)];
   
   var van = [
     
-    'Força Superior :muscle:',
-    'Genialidade :jigsaw:',
-    'Manamante :cyclone:',
-    'Velocidade :recycle:'
+    'Força Superior - :muscle:',
+    'Genialidade - :jigsaw:',
+    'Manamante - :cyclone:',
+    'Velocidade - :recycle:'
     
   ];
   let vanrand = van[Math.floor(Math.random() * van.length)];
