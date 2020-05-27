@@ -9,7 +9,7 @@ g.fale : O bot repete a mensagem escrita depois do comando.
 g.ajuda : Exibe a lista de comandos disponíveis.
 g.status : Informa seus status no Discord.
 
-COMANDOS DE MISCEL NEA"
+COMANDOS DE MISCELÂNEA"
 g.avatar : cria um personagem aleatório com uma lista de características.
 g.nima : Informa sua porcentagem de sensualidade masculina!
 g.s10 : Simula a invocação de heróis do AFK ARENA.
