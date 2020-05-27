@@ -55,6 +55,7 @@ let avatar = message.author.displayAvatarURL({format: "png"});
         .setDescription(` ${rand0} - ${rand1} - ${rand2} - ${rand3} - ${rand4} - ${rand5} - ${rand6} - ${rand7} - ${rand8} - ${rand9}`)
         .setThumbnail(avatar)
         .setFooter('Parabéns!')
+        .setAuthor(message.author.tag, avatar);
       await message.channel.send(embed);
   
 }

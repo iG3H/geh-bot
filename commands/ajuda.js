@@ -4,21 +4,27 @@ exports.run = async (client, message, args) => {
   
 const content = [`
               
-              COMANDO GERAIS"
-              g.fale : O bot repete a menssagem escrita depois do comando.
-              g.ajuda : Exibe a lista de comandos disponiveis.
-              g.status : Informa seus status no Discord.
-              
-              COMANDOS DE AÇÕES"
-              g.care <@user> : Pede carinho pra o usuário mencionado.
-              g.seduce <@user> : Tenta seduzir o usuário mencionado. 
-              g.ignite <@user> : Queima o usuário mencionado.
-              g.freez <@user> : Congela o usuário mencionado.   
-              g.maldite <@user> : Amaldiçoa o usuário mencionado.
+COMANDOS GERAIS"
+g.fale : O bot repete a mensagem escrita depois do comando.
+g.ajuda : Exibe a lista de comandos disponíveis.
+g.status : Informa seus status no Discord.
 
-              COMANDO ADMINISTRATIVOS" *apenas com Permissão*
-              g.delete <número entre 1 a 100> : Apaga a quantidade informada de menssagem no canal.
-              g.destroi : Apaga uma quantidade variavél de menssagens no canal.
+COMANDOS DE MISCEL NEA"
+g.avatar : cria um personagem aleatório com uma lista de características.
+g.nima : Informa sua porcentagem de sensualidade masculina!
+g.s10 : Simula a invocação de heróis do AFK ARENA.
+
+COMANDOS DE AÇÕES"
+g.care <@user> : Pede carinho pra o usuário mencionado.
+g.seduce <@user> : Tenta seduzir o usuário mencionado.
+g.ignite <@user> : Queima o usuário mencionado.
+g.freez <@user> : Congela o usuário mencionado.
+g.maldite <@user> : Amaldiçoa o usuário mencionado.
+
+COMANDOS ADMINISTRATIVOS" apenas com permissão
+g.delete <número entre 1 a 100> : Apaga a quantidade informada de mensagem no canal.
+g.destroi : Apaga uma quantidade variável de mensagens no canal.
+
 
   `]
    
