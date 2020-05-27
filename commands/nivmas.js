@@ -2,6 +2,21 @@ const Discord = require('discord.js');
 
 exports.run = async (client, message, args) => {
 
+const number = [
+                ':one:',
+                ':two:',
+                ':three:',
+                ':four:',
+                ':five:',
+                ':six:',
+                ':seven:',
+                ':eight:',
+                ':nine:',
+                ':zero:'
+               ];
+  
+var rand2 = mumber[Math.floor(Math.random() * number.length)];  
+  
 var list = [
   'https://imgur.com/g54UpQP.gif',
   'https://imgur.com/w06DjGv.gif',
@@ -13,20 +28,16 @@ var list = [
   message.delete().catch(O_o => {});
 
 var rand = list[Math.floor(Math.random() * list.length)];
-let user = message.mentions.users.first() || client.users.cache.get(args[0]);
-if (!user) {
-return message.reply('você mencionou errado um User, tente do jeito certo animal.');
-}
-
+  
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('Primeira Habilidade: Infernum Sinitis')
-        .setColor('#CB4335')
-        .setDescription(`:flame: ${message.author} INCENDIOU ${user} :flame:`)
+        .setTitle('')
+        .setColor('RANDOM')
+        .setDescription(`${number}${number}`)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)
-        .setFooter('Queime Herege!')
+        .setFooter('')
         .setAuthor(message.author.tag, avatar);
   await message.channel.send(embed);
   
