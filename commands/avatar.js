@@ -11,24 +11,22 @@ exports.run = async (client, message, args) => {
   ];
   let sexrand = sex[Math.floor(Math.random() * sex.length)];
   
-  var age = [
+  const age = [
     
-    '13 anos',
-    '20 anos',
-    '25 anos',
-    '31 anos',
-    '40 anos',
-    '47 anos',
-    '55 anos',
-    '62 anos',
-    '70 anos',
-    '88 anos',
-    '90 anos',
-    '111 anos',
-    'desconhecido'
-    
+                ':one:',
+                ':two:',
+                ':three:',
+                ':four:',
+                ':five:',
+                ':six:',
+                ':seven:',
+                ':eight:',
+                ':nine:'
+                
   ];
-  let agerand = age[Math.floor(Math.random() * age.length)];
+  
+  let agerand1 = age[Math.floor(Math.random() * age.length)];
+  let agerand2 = age[Math.floor(Math.random() * age.length)];
   
   var race = [
     
@@ -109,7 +107,7 @@ const avatarlist = [`
 
 ${message.author}, seu avatar está pronto:
 :white_small_square: Sexo: ${sexrand}
-:white_small_square: Idade: ${agerand}
+:white_small_square: Idade: ${agerand1}${agerand2} Anos.
 :white_small_square: Raça: ${racerand}
 :white_small_square: Decendência: ${decrand}
 :white_small_square: Função: ${funrand}
