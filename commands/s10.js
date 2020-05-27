@@ -50,11 +50,18 @@ var rand = list[Math.floor(Math.random() * list.length)];
   
 let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
-        .setTitle('Sua Porcentagem de Sensualidade Masculina é:')
-        .setColor('#34b1eb')
-        .setDescription(`===========> ${rand1} - ${rand2} <===========
-                         ===========> ${rand1} - ${rand2} <===========
-                         ===========> ${rand1} - ${rand2} <===========`)
+        .setTitle('Sua invocação de 2700 diamantes está pronta!')
+        .setColor('RANDOM')
+        .setDescription(`
+                        
+                                   ${rand0}
+                          ${rand1}          ${rand3} 
+                                   ${rand2}
+                          ${rand4}          ${rand6} 
+                                   ${rand5}
+                          ${rand7}          ${rand9}
+                                   ${rand8}
+`)
         .setImage('')
         .setTimestamp()
         .setThumbnail(avatar)
