@@ -52,21 +52,13 @@ let avatar = message.author.displayAvatarURL({format: "png"});
   const embed = new Discord.MessageEmbed()
         .setTitle('Sua invocação de 2700 diamantes está pronta!')
         .setColor('RANDOM')
-        .setDescription(`
-                        
-                                   ${rand0}
-                          ${rand1}          ${rand3} 
-                                   ${rand2}
-                          ${rand4}          ${rand6} 
-                                   ${rand5}
-                          ${rand7}          ${rand9}
-                                   ${rand8}
+        .setDescription(` ${rand0} - ${rand1} - ${rand2} - ${rand3} - ${rand4} - ${rand5} - ${rand6} - ${rand7} - ${rand8} - ${rand9}
 `)
         .setImage('')
         .setTimestamp()
         .setThumbnail(avatar)
         .setFooter('Parabéns!')
-        .setAuthor(message.author.tag, avatar);
+        .setAuthor('');
   await message.channel.send(embed);
   
 }
