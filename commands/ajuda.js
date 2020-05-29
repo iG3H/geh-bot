@@ -13,6 +13,7 @@ COMANDOS DE MISCELÂNEA"
 g.avatar : cria um personagem aleatório com uma lista de características.
 g.nima : Informa sua porcentagem de sensualidade masculina!
 g.s10 : Simula a invocação de heróis do AFK ARENA.
+g.desafia <@user> : Tem uma batalha pokémon com o usuário mencionado.
 
 COMANDOS DE AÇÕES"
 g.care <@user> : Pede carinho pra o usuário mencionado.
@@ -20,6 +21,7 @@ g.seduce <@user> : Tenta seduzir o usuário mencionado.
 g.ignite <@user> : Queima o usuário mencionado.
 g.freez <@user> : Congela o usuário mencionado.
 g.maldite <@user> : Amaldiçoa o usuário mencionado.
+g.protect : Tenta se defender de alguma Habilidade em que foi mencionado.
 
 COMANDOS ADMINISTRATIVOS" apenas com permissão
 g.delete <número entre 1 a 100> : Apaga a quantidade informada de mensagem no canal.
