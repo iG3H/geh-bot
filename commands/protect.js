@@ -12,20 +12,22 @@ var list = [
   message.delete().catch(O_o => {});
 
 var rand = list[Math.floor(Math.random() * list.length)];
-let user = message.mentions.users.first() || client.users.cache.get(args[0]);
-if (!user) {
-return message.reply('você mencionou errado um User, tente do jeito certo animal.');
-}
 
 let avatar = message.author.displayAvatarURL({format: "png"});
+  
+var chance = [
+                'teve sucesso :v:',
+                'falhou vergonhosamente :thumbsdown:'    
+];
+  
   const embed = new Discord.MessageEmbed()
-        .setTitle('Terceira Habilidade: Tenebris Mortis')
-        .setColor('#3a0166')
-        .setDescription(`:skull: ${message.author} AMALDIÇOU ${user} :skull:`)
+        .setTitle('Quarta Habilidade: Perfectus Defensionis')
+        .setColor('#8ff2a8')
+        .setDescription(`:shield: ${message.author}, ${chance} na sua proteção! :shield:`)
         .setImage(rand)
         .setTimestamp()
         .setThumbnail(avatar)
-        .setFooter('As trevas consomen tudo! -Veigas Terr.')
+        .setFooter('Livra-me deste mal, oh luz eu te peço!.')
         .setAuthor(message.author.tag, avatar);
   await message.channel.send(embed);
   
