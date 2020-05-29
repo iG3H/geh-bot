@@ -5,7 +5,8 @@ exports.run = async (client, message, args) => {
 var list = [
   'https://imgur.com/gBrqVfq.gif',
   'https://imgur.com/csysti6.gif',
-  'https://imgur.com/u985dJ8.gif'
+  'https://imgur.com/u985dJ8.gif',
+  'https://imgur.com/YEWO1Dh.gif'
    
 ];
 

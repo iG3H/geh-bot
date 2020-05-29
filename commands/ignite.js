@@ -6,7 +6,8 @@ var list = [
   'https://imgur.com/g54UpQP.gif',
   'https://imgur.com/w06DjGv.gif',
   'https://imgur.com/SZD4ZLG.gif',
-  'https://imgur.com/BNxLtAE.gif'
+  'https://imgur.com/BNxLtAE.gif',
+  'https://imgur.com/NCPziSy.gif'
    
 ];
 
